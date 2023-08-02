@@ -1,0 +1,68 @@
+
+<%- include('partials/header') %>
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="row mb-2">
+            <div class="col-md-5">
+                <a href="/" id="btnRegresar" class="btn btn-sm btn-primary">Regresar</a>
+                <a href="/lista-reservas" class="btn btn-sm btn-info text-light">Inicio</a>
+            </div>
+        </div>
+
+        <div class="mx-auto">
+            <form id="formNuevaReserva" method="POST" class="rounded border p-3">
+                <h3 class="mb-3 text-center bg-primary text-light rounded p-2">Nueva Reserva</h3>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" required="true" class="form-control" id="nombre" name="nombre">
+                    </div>
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="apellido" class="form-label">Apellido</label>
+                        <input type="text" required="true" class="form-control" id="apellido" name="apellido">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="fechaIngreso" class="form-label">Fecha Ingreso</label>
+                        <input type="datetime-local" required="true" class="form-control" id="fechaIngreso" name="fechaIngreso">
+                    </div>
+                    <div class="col col-md-6 col-sm-12 mb-3">
+                        <label for="fechaSalida" class="form-label">Fecha Salida</label>
+                        <input type="datetime-local" required="true" class="form-control" id="fechaSalida" name="fechaSalida">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="habitacion" class="form-label">Sala</label>
+                        <input type="text" required="true" class="form-control" id="sala" name="sala">
+                    </div>   
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="habitacion" class="form-label">Haciento</label>
+                        <input type="text" required="true" class="form-control" id="haciento" name="haciento">
+                    </div>
+                 
+                    <div class="col col-sm-12 col-md-6 mb-3">
+                        <label for="habitacion" class="form-label">Precio</label>
+                        <input type="text" required="true" class="form-control" id="precio" name="precio">
+                    </div>
+                </div>
+
+                <div class="row d-flex align-items-center justify-content-end">
+                    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-2 mb-1">
+                        <button type="submit" class="w-100 btn btn-sm btn-primary">Guardar</button>
+                    </div>
+                    <div class="col-sm-12 col-md-2 col-lg-2 col-xl-2 col-2 mb-1">
+                        <a href="/lista-reservas" class="w-100 btn btn-sm btn-secondary">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/crear-reserva"></script>
+
+<%- include('partials/footer') %>

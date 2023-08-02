@@ -1,5 +1,5 @@
 // TODO: Crear modelo de datos de Reserva
-
+const {sequelize, DataTypes} = require('../database')
 
 const Reserva = sequelize.define('ReservaCine', {
     id: {
@@ -67,3 +67,5 @@ const Reserva = sequelize.define('ReservaCine', {
 Reserva.sync({force: false}).then(() => {
     console.log('La Tabla de Reservas fue creada con éxito')
 });
+
+module.exports = Reserva

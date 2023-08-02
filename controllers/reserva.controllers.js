@@ -68,7 +68,7 @@ ctrl.crearReserva = async (req, res) => {
       fechaIngreso,
       fechaSalida,
       sala,
-      asiento,
+      haciento,
       precio
     } = req.body;
     try{
@@ -79,7 +79,7 @@ ctrl.crearReserva = async (req, res) => {
         fechaIngreso,
         fechaSalida,
         sala,
-        asiento,
+        haciento,
         precio
       });
   
