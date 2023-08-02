@@ -7,6 +7,10 @@ const path = require('path');
 require('dotenv').config();//configuración para variables de entorno
 require('ejs');//acceso al motor de plantillas de ejs
 
+//conexción a la BD
+const {sequelize, conectarDB} = require('./database')
+conectarDB
+
 const app = express();
 const port = process.env.PORT || 3000
 
