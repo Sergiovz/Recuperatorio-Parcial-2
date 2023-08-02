@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const morgan = require('morgan');
 const path = require('path');
 require('dotenv').config();//configuración para variables de entorno
-require('ejs');//acceso al motor de vistas de ejs
+require('ejs');//acceso al motor de plantillas de ejs
 
 const app = express();
 const port = process.env.PORT || 3000
